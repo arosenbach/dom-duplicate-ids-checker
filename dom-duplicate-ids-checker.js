@@ -14,4 +14,4 @@ const observer = new MutationObserver(mutations => {
     });
 });
 
-observer.observe(document.body, { attributes: false, childList: true, characterData: false, subtree: true }); ";
+observer.observe(document.body, { attributes: false, childList: true, characterData: false, subtree: true });
