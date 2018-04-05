@@ -5,9 +5,9 @@ const observer = new MutationObserver(mutations => {
     .filter(elem => !!elem.id)
     .map(elem => elem.id)
     .some(id => {
-      const ids = document.querySelectorAll('[id=\"' + id + '\"]');
+      const ids = document.querySelectorAll(`[id="${id}"]`);
       if (ids.length > 1) {
-        console.error('Duplicate ID : ' + id);
+        console.error('Duplicate ID :',id);
         return true;
       }
       return false;
